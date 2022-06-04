@@ -1,15 +1,20 @@
 import './App.css';
-import { useFeaturedBanners } from './utils/hooks/useFeaturedBanners';
+import Content from './components/Layout/Content';
+import Footer from './components/Layout/Footer';
+import Header from './components/Layout/Header';
+import MainContainer from './components/Layout/MainContainer';
 
-function App() {
-  const { data, isLoading } = useFeaturedBanners();
-  console.log(data, isLoading);
-
+function App(props) {
   return (
     <div className="App">
-      <header className="App-header">
+      <MainContainer>
+        <Header />
+        <Content />
+        <Footer />
+      </MainContainer>
+      {/* <header className="App-header">
         <h1>Olá mundo!</h1>
-      </header>
+      </header> */}
     </div>
   );
 }
