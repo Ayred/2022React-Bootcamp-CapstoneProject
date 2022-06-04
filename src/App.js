@@ -6,16 +6,11 @@ import MainContainer from './components/Layout/MainContainer';
 
 function App(props) {
   return (
-    <div className="App">
-      <MainContainer>
-        <Header />
-        <Content />
-        <Footer />
-      </MainContainer>
-      {/* <header className="App-header">
-        <h1>Olá mundo!</h1>
-      </header> */}
-    </div>
+    <MainContainer>
+      <Header />
+      <Content />
+      <Footer />
+    </MainContainer>
   );
 }
 
