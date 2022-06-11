@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const SHeader = styled.header`
-  background: blue;
+  background: #5b75f3;
   padding: 10px;
-  position: sticky;
+  position: relative;
+  display: flex;
   top: 0;
-  z-index: 10;
 `;
